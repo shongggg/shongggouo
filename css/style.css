@@ -1222,24 +1222,35 @@ input[type="text"] {
   outline: none !important;
 }
 
+/* Base styling */
 .btn-primary {
   background: #000000;
   color: #fff;
   border: 2px solid #ffffff;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
   background: #b6b6b6 !important;
   border-color: #ffffff !important;
 }
+
+/* Contact Me button (white background, black text) */
 .btn-primary.btn-outline {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #FF9000;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
 }
-.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #000000;
-  color: #fff;
+
+.btn-primary.btn-outline:hover, 
+.btn-primary.btn-outline:focus, 
+.btn-primary.btn-outline:active {
+  background: #b6b6b6 !important;
+  color: #fff !important;
+  border-color: #ffffff !important;
 }
+
 
 .btn-success {
   background: #5cb85c;
