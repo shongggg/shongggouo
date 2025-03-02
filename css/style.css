@@ -89,79 +89,44 @@ h1, h2, h3, h4, h5, h6, figure {
   gap: 10px;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.carousel {
+  display: flex;
+  width: max-content;
+}
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 25s linear infinite;
+}
+@keyframes scroll {
+  from {
+      transform: translateX(10);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
 .badge {
-  padding: 5px 15px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  display: inline-block;
-  text-align: center;
-  cursor: default;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  min-width: 80px;
 }
-
-.badge.html {
-  background-color: #e34c26; /* HTML badge color */
-}
-
-.badge.css {
-  background-color: #1572b6; /* CSS badge color */
-}
-
-.badge.javascript {
-  background-color: #f7df1e; /* JavaScript badge color */
-  color: #000;
-}
-
-.badge.php {
-  background-color: #777bb4; /* PHP badge color */
-}
-
-.badge.laravel {
-  background-color: #ff2d20; /* Laravel badge color */
-}
-.badge.tailwind {
-  background-color: #06b6d4; /* Tailwind CSS color */
-}
-
-.badge.java {
-  background-color: #007396; /* Java color */
-}
-
-.badge.c {
-  background-color: #555555; /* C language color */
-}
-
-.badge.figma {
-  background-color: #a259ff; /* Figma color */
-}
-
-.badge.canva {
-  background-color: #00c4cc; /* Canva color */
-}
-
-.badge.after-effects {
-  background-color: #4100aa; /* Adobe After Effects color */
-}
-
-.badge.mysql {
-  background-color: #00758f; /* MySQL color */
-}
-.badge.lightroom {
-  background-color: #437bf5; /* Lightroom color */
-}
-
-.badge.photoshop {
-  background-color: #001b96; /* Photoshop color */
-}
-
-.badge.illustrator {
-  background-color: #ff9a00; /* Illustrator color */
-}
-
-.badge.pixellab {
-  background-color: #65baff; /* PixelLab color */
+.badge img {
+  width: 50px;
+  height: 50px;
 }
 
 #fh5co-header,
@@ -1223,6 +1188,12 @@ input[type="text"] {
 .btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
   outline: none !important;
+}
+
+.center-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
 }
 
 /* Base styling */
