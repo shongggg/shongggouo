@@ -250,6 +250,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  background-color: white;
 }
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
@@ -902,7 +903,6 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   border-radius: 10px 10px 0 0 ;
   background-size: cover;
-  background-position: center center;
   position: relative;
   height: 300px;
 }
