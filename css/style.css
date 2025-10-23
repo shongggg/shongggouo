@@ -293,8 +293,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #aaaaaa; /* Light gray for GitHub */
 }
 
-.fh5co-social-icons li a:hover .fa-instagram {
-  color: #E4405F; /* Instagram pinkish-red */
+.fh5co-social-icons li a:hover .fa-briefcase {
+  color: #2fa1ff; /* Instagram pinkish-red */
 }
 
 
