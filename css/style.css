@@ -890,7 +890,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-blog {
   width: 100%;
-  float: left;
+  float: center;
+  
   margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -900,11 +901,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-blog .blog-bg {
   display: block;
-  width: 100%;
-  border-radius: 10px 10px 0 0 ;
+  aspect-ratio: 16 / 9;
   background-size: cover;
-  position: relative;
-  height: 300px;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog .blog-bg {
