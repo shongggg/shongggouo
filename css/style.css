@@ -797,6 +797,11 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   overflow: hidden;
 }
+.work--contain {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 @media screen and (max-width: 768px) {
   .work {
     height: 400px;
@@ -1385,6 +1390,70 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0;
 }
+
+.portfolio-slider {
+  padding-bottom: 60px;
+}
+
+.portfolio-slider .swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+}
+
+.portfolio-slider .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.see-more-card {
+  height: 100%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Removed hover effects completely */
+.see-more-link {
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.see-more-content h3 {
+  margin-bottom: 10px;
+}
+
+.see-more-content p {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.see-more-btn {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* NO hover styling at all now */
+
+
 
 /*# sourceMappingURL=style.css.map */
 
