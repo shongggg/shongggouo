@@ -289,8 +289,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #1877F2; /* Official Facebook blue */
 }
 
-.fh5co-social-icons li a:hover .fa-github {
-  color: #aaaaaa; /* Light gray for GitHub */
+.fh5co-social-icons li a:hover .fa-instagram {
+  color: #f80091; /* Light gray for GitHub */
 }
 
 .fh5co-social-icons li a:hover .fa-briefcase {
@@ -1451,6 +1451,55 @@ input[type="text"] {
   gap: 8px;
 }
 
+/* Floating Sidebar Navigation */
+.floating-nav {
+    position: fixed;
+    left: 32px; /* changed from right */
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    mix-blend-mode: difference;
+}
+
+.floating-nav a {
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s ease;
+}
+
+.floating-nav i {
+    font-size: 22px;
+}
+
+.floating-nav a:hover {
+    transform: scale(1.25);
+}
+
+.floating-nav a.active {
+    transform: scale(1.35);
+}
+
+@media (max-width: 768px) {
+    .floating-nav {
+        right: 18px;
+        gap: 20px;
+    }
+
+    .floating-nav i {
+        font-size: 18px;
+    }
+}
 /* NO hover styling at all now */
 
 
